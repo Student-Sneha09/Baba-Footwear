@@ -156,9 +156,11 @@ footer p {
 /* 📱 Mobile Responsive Styling */
   /* ✅ Mobile screen adjustments */
 @media (max-width: 768px) {
+
   nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
     padding: 10px 15px;
     background-color: #1a1a1a;
     color: white;
@@ -171,6 +173,22 @@ footer p {
     color: white;
     text-decoration: none;
   }
+   
+  nav h1{
+    font-size: 22px;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  nav input[type="text"]{
+    width: 80%;
+    padding: 8px;
+    font-size: 14px;
+  }
 
   .logo {
     font-weight: bold;
@@ -178,13 +196,8 @@ footer p {
     margin-bottom: 10px;
   }
 
-  input[type="text"] {
-    width: 100%;
-    font-size: 16px; /* 🔍 Bigger input text */
-  }
-
   button {
-    font-size: 16px;
+    font-size: 14px;
     padding: 6px 12px;
   }
 
@@ -195,10 +208,16 @@ footer p {
   }
 
   .product-card {
-    width: 80%;
+    width: 140px;
+    padding: 10px;
+    font-size: 14px;
     margin-bottom: 20px;
   }
-}
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
 
   footer {
     flex-direction: column;
@@ -207,3 +226,15 @@ footer p {
     padding: 10px;
   }
 
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  footer p,footer h3{
+    font-size: 14px
+  }
+
+}
